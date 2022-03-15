@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap 5 - Transparent Navbar</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/index.css"  />
+    <style>
+      .banner-image {
+        background-image: url('img/text.jpg');
+        background-size: coer;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar  -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+      <div class="container">
+        <a class="navbar-brand" href="#">CEDIM Doações</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="mx-auto"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Doações</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Acompanhamento</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Princial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">contatos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Banner Image  -->
+    <div
+      class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center"
+    >
+    
+      <div class="content text-center">
+        <h1 class="text-white">CEDIM</h1>
+      </div>
+    </div>
+    <!-- Main Content Area -->
+    <div id="content-head">
+      <div class="text-blue text-center container">
+        <div class="row">
+          <div class="col">
+            <h1>
+              <b>
+               Opções de Doações
+                <br>
+                realmente
+              </b>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="container my-5 d-grid gap-5">
+      <link rel="stylesheet" href="img/dinheiro doação.jpg">
+         <div class="p-5 border">
+           
+           <div class="btns">
+             <button class="bt">doar</button>
+           <button class="bt2">receber</button>
+           </div>
+           
+  <p>
+          Dinheiro
+        </p>
+        <P>Todas as instinuiçoes ao redor do seu lado
+          <br> ira receber essa doação com muito amor e carinho</P>
+      </div>
+      <div class="p-5 border">
+        <button  >doar</button><br>
+        <button>receber</button>
+
+        <p>
+          Roupas
+        </p>
+      </div>
+      <div class="p-5 border">
+        <button  >doar</button>
+        <button>receber</button>
+        <p>
+          Comidas
+        </p>
+      </div>
+      
+    </div> -->
+    <div class="wrapper row2">
+      <section class="hoc container clear"> 
+        <!-- ################################################################################################ -->
+        <div class="sectiontitle">
+          <p class="nospace font-xs">receba a doação do seu proximo</p>
+          <h6 class="heading">Agora</h6>
+        </div>
+        <ul id="latest" class="nospace group sd-third">
+          <li class="one_third first">
+            <article>
+              <figure><a class="imgover" href="#"><img src="348x261.png" alt=""></a>
+                <figcaption>
+                  <ul class="nospace meta clear">
+                   
+                    <input type='button' value='Accept'> <input type='button' value='Decline'>
+                    
+                   <div class="bubbly-button">
+                  </div>
+                </figcaption>
+              </figure>
+              <p>Justo massa adipiscing a convallis ultricies luctus et dolor aliquam nulla aenean facilisis ullamcorper diam nunc pede nulla iaculis quis lacinia ac adipiscing.</p>
+            </article>
+          </li>
+          <li class="one_third">
+            <article>
+              <figure><a class="imgover" href="#"><img src="348x261.png" alt=""></a>
+                <figcaption>
+                  <ul class="nospace meta clear">
+                  
+                      
+                  
+                  <div class="butto2">
+                    <button>doar</button>
+                    <button>Receber</button>
+                  </div>
+                </figcaption>
+              </figure>
+              <p>Semper mattis nulla cursus lorem ut gravida tempor massa massa porta libero at scelerisque et arcu nulla facilisi aenean fringilla imperdiet felis mauris.</p>
+            </article>
+          </li>
+          <li class="one_third">
+            <article>
+              <figure><a class="imgover" href="#"><img src="348x261.png" alt=""></a>
+                <figcaption>
+                  <ul class="nospace meta clear">
+              
+               
+                  
+                 <div class="buto3">
+                  <button>doar</button>
+                  <button>Receber</button>
+                 </div>
+                </figcaption>
+              </figure>
+              <p>Ac lectus sed ultricies augue congue nibh donec convallis elementum leo nullam dignissim varius ante fusce pharetra sodales arcu sed rutrum ipsum a ipsum.</p>
+            </article>
+          </li>
+        </ul>
+        <!-- ################################################################################################ -->
+      </section>
+    </div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+      var nav = document.querySelector('nav');
+
+      window.addEventListener('scroll', function () {
+        if (window.pageYOffset > 100) {
+          nav.classList.add('bg-dark', 'shadow');
+        } else {
+          nav.classList.remove('bg-dark', 'shadow');
+        }
+      });
+      var nav = document.querySelector('nav');
+
+window.addEventListener('scroll', function () {
+  if (window.pageYOffset > 100) {
+    nav.classList.add('bg-dark', 'shadow');
+  } else {
+    nav.classList.remove('bg-dark', 'shadow');
+  }
+});
+    </script>
+  </body>
+</html>
+
